@@ -1,0 +1,12 @@
+clear; clc; close all;
+
+n = 1000;
+
+x_1 = randn(n,1);
+x_2 = randn(n,1);
+cauchy = x_1./x_2;
+figure;
+histogram(cauchy,n);
+
+disp(mean())
+disp(var(n))
